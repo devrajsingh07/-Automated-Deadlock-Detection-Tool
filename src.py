@@ -1,3 +1,5 @@
+
+#Add example usage scenarios for testing deadlock detection
 def build_wait_for_graph(P, R, allocation, request):
     graph = {i: [] for i in range(P)}
     for i in range(P):
