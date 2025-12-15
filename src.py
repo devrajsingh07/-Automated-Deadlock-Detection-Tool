@@ -9,7 +9,7 @@ def build_wait_for_graph(P, R, allocation, request):
                     if allocation[k][j] == 1:
                         graph[i].append(k)
     return graph
-
+ # Mark the current node as visited and add to recursion stack
 def dfs(node, graph, visited, rec_stack, cycle):
     visited[node] = True
     rec_stack[node] = True
